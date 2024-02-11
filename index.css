@@ -1,0 +1,68 @@
+body {
+    background-color: pink;
+    font-family: Arial;
+    color: white;
+  }
+
+.center{
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    margin: 0;  
+    max-height: 200px;
+
+}
+
+  .no-button { background-color: red; 
+                color: white; 
+                padding: 40px 80px; 
+                border: none; 
+                border-radius: 5px; 
+                cursor: pointer; 
+                margin-right: 10px; 
+                font-size: 5rem;
+            }
+
+.yes-button { background-color: green; 
+                color: white; padding: 40px 80px; 
+                border: none; 
+                border-radius: 5px; 
+                cursor: pointer; 
+                font-size: 5rem;
+            }
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+#valentine-message{
+    font-size: 5rem;
+    
+}
+                
+.carousel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    width:500px;
+    margin: 10vh auto;
+    padding-top: 10vh;
+}
+
+.carousel img {
+    object-fit: cover;
+    animation: slide 10s infinite;
+    max-width: 500px;
+}
+
+@keyframes slide {
+    0% {opacity: 1; transform: translateX(-100%);}
+    33% {opacity: 1; transform: translateX(0%);}
+    66% {opacity: 1; transform: translateX(100%);}
+    100% {opacity: 1; transform: translateX(100%);}
+}
+
+ 

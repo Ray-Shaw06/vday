@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Valentines Day</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="" />
+  <link rel="stylesheet" href="index.css" />
+</head>
+<body>
+  
+    <div class="carousel">
+        <img src="1stdate.jpg">
+        <img src="6month.jpg">
+        <img src="mk.jpg">
+        <img src="prom.jpg">
+        <img src="spidey.jpg">
+    </div>
+    <div class="center">
+    <h1 id="valentine-message">Will you be my Valentine?</h1>
+  </div>
+  <div class="button-container">
+    <button class="yes-button" id="yes-button">Yes</button>
+    <button class="no-button" id="no-button">No</button>
+  </div>
+  <script>
+    const yesButton = document.getElementById("yes-button");
+    const noButton = document.getElementById("no-button");
+    let yesScale = 1;
+    let noScale = 1;
+    const valentineMessage = document.getElementById("valentine-message");
+
+    noButton.addEventListener("click", () => {
+      yesButton.style.transform = `scale(${yesScale += 0.2})`;
+      noButton.style.transform = `scale(${noScale -= 0.2})`;
+    });
+
+    yesButton.addEventListener("click", () => {
+      yesButton.style.transform = "scale(1)";
+      noButton.style.transform = "scale(1)";
+      yesScale = 1;
+      noScale = 1;
+      valentineMessage.textContent = "Thank you, I love you:)";
+    });
+  </script>
+</body>
+<!-- Hi,
+I just wanted to take a moment to express how grateful I am for you and everything you do for me. Your love and support mean the world to me, and I can't thank you enough for being by my side through thick and thin. I am so happy I didn't have to think twice about my valentine's day knowing I was gonna spend it with you (again). Your love fills my heart with warmth and joy, and I treasure every moment we spend together.
+Thank you for being my rock, my shoulder to cry on (or the more likely go clinically insane on) and for being way more reliable than my knees. You make every day brighter when I see your face, and I am so incredibly fortunate to call you mine. Here's to another Valentine's Day with the most amazing person in the world. I love you more than words can express, and I can't wait to create more beautiful memories together.
+With all my love,
+Rayrayyy -->
+</html>
